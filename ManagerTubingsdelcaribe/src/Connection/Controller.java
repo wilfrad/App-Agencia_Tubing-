@@ -6,7 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Controller {
-    private Connection _Connection;
     private String messageError;
     boolean correct = false;
     
@@ -21,7 +20,7 @@ public class Controller {
         return newConnection;
     }
     
-    public void send() {
+    public void send(Connection _Connection) {
         try {
             PreparedStatement stmt = _Connection.prepareStatement("");
             
@@ -36,7 +35,7 @@ public class Controller {
         }
     }
     
-    public void close(){
+    public void close(Connection _Connection){
         if (_Connection != null) {
             try {
                 if (!_Connection.isClosed())
@@ -47,7 +46,7 @@ public class Controller {
         }
     }
     
-    public boolean conected(){
+    public boolean conected(Connection _Connection){
         boolean isCorrect = false;
         if (_Connection != null) {
             try {
