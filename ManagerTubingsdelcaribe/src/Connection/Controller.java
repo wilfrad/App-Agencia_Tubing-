@@ -6,13 +6,13 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Controller {
-    private String messageError;
-    boolean correct = false;
+    private static String messageError;
+    private static boolean correct = false;
     
     public static Connection getConnection() {
         Connection newConnection;
         try {
-            newConnection = DriverManager.getConnection(serverInfo.url, serverInfo.user, serverInfo.psd);
+            newConnection = DriverManager.getConnection(ServerInfo.url, ServerInfo.user, ServerInfo.psd);
         } catch (SQLException ex) {
             return null;
         }
@@ -20,7 +20,7 @@ public class Controller {
         return newConnection;
     }
     
-    public void send(Connection _Connection) {
+    public static void send(Connection _Connection, Consult _Consult) {
         try {
             PreparedStatement stmt = _Connection.prepareStatement("");
             
@@ -35,7 +35,7 @@ public class Controller {
         }
     }
     
-    public void close(Connection _Connection){
+    public static void close(Connection _Connection){
         if (_Connection != null) {
             try {
                 if (!_Connection.isClosed())
@@ -46,7 +46,7 @@ public class Controller {
         }
     }
     
-    public boolean conected(Connection _Connection){
+    public static boolean conected(Connection _Connection){
         boolean isCorrect = false;
         if (_Connection != null) {
             try {
@@ -60,7 +60,7 @@ public class Controller {
         return isCorrect;
     }
     
-    public String getErrorMessage() {
+    public static String getErrorMessage() {
         return messageError;
     }
 }
