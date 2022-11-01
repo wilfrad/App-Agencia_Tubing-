@@ -1,0 +1,128 @@
+jFLogin
+	Size: 400, 600
+	Content:
+		jPanelView
+			Size: 400, 640
+			Color: white
+			Content:
+				img: img_login_welcome 400, 200
+				jLabelTitleLogin
+					size: 260, 30
+					font-size: 20
+					font-style: bold
+				jTextFieldUser
+					size: 300, 50
+					border-color: ececec \e\ ff2a2a
+					font-size: 14
+					font-style: regular
+					placeholder: 'Usuario'
+				jTextFieldPass
+					size: 300, 50
+					border-color: ececec \e\ ff2a2a
+					font-size: 14
+					font-style: regular
+					placeholder: 'Contraseña'
+				jLabelErrorMessage
+					size: 225, 10
+					color: ff2a2a
+					font-size: 10
+					font-style: regular
+				jButtonLogin
+					size: 200, 50
+					color: a0ad45
+					font-size: 16
+					font-style: bold
+					placeholder: 'Ingresar'
+				img_login_line_blue
+					size: 400, 15
+					color: 0d5ab1 \e\ ff2a2a
+JfMain
+	Size: 1024, 620
+	Content:
+		jPanelNavBar
+			size: 844, 46
+			color: white
+			Content:
+				jButtonGroup
+					size-button: min-65, 30
+					font-size: 16
+				jButton
+					size: 30,30
+					icon: icon_main_close
+		jPanelMenuOptions
+			size: 180, 640
+			color: a0ad45
+			Content:
+				jPanelProfileInfo
+					size: 180, 80
+					Content:
+						img: icon_menu_profile 40, 25
+						jLabelNameProfile
+							size: 110, 16
+							font-size: 12
+							font-style: regular
+						jLabelLevelProfile
+							size: 80, 10
+							font-size: 10
+							font-style: regular
+				jPanelMenuActions
+					size: 180, 200
+					Content:
+						jButtonGroup
+							size-button: 180, 40
+							margin: 4
+							color: 8c9931 \\ c8d577
+							font-size: 20
+		jPanelNotification
+			size: 180, 130
+			color: 8c9931 \\ c8d577
+			Content:
+				img: icon_notification_check \\ icon_notification_warning 30, 30
+				jButtonNotificationClose
+					img: icon_close 16, 16
+				jLabelEntity
+					size: 100, 16
+					font-size: 14
+					font-style: bold
+				jLabelMessage
+					size: 160, 50
+					font-size: 12
+					font-style: regular
+				jLabelError
+					size: 160, 20
+					font-size: 10
+					font-style: regular
+		jPanelView
+			size: 844, 570
+			color: white
+jPanelPrincipal
+	jButtonService
+		size: 400, 300
+		color: 37c8ab
+		img: icon_principal_service 150, 150
+		placeholder: 'Servicio'
+		font-size: 30
+		font-style: bold
+	jButtonInventory
+		size: 250, 300
+		color: 9955ff
+		img: icon_principal_inventory 150, 150
+		placeholder: 'Inventario'
+		font-size: 30
+		font-style: bold
+	jButtonLogs
+		size: 400, 150
+		color: ff7f2a
+		img: icon_principal_logs 150, 150
+		placeholder: 'Informes'
+		font-size: 30
+		font-style: bold
+	jButtonAdmin
+		size: 250, 150
+		color: ff2a2a
+		img: icon_principal_admin 150, 150
+		placeholder: 'Administrador'
+		font-size: 30
+		font-style: bold
+jPanelServiceClient
+	

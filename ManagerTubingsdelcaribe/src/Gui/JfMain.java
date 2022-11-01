@@ -27,18 +27,158 @@ public class JfMain extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPanelNavBar = new javax.swing.JPanel();
+        jButtonNavBarPos0 = new javax.swing.JButton();
+        jLabelNavBarPos1 = new javax.swing.JLabel();
+        jButtonNavBarPos1 = new javax.swing.JButton();
+        jLabelNavBarPos2 = new javax.swing.JLabel();
+        jButtonNavBarPos2 = new javax.swing.JButton();
+        jLabelNavBarPos3 = new javax.swing.JLabel();
+        jButtonNavBarPos3 = new javax.swing.JButton();
+        jButtonNavBarClose = new javax.swing.JButton();
+        jPanelMenu = new javax.swing.JPanel();
+        jPanelMenuOptions = new javax.swing.JPanel();
+        jButtonMenuPrincipal = new javax.swing.JButton();
+        jButtonMenuService = new javax.swing.JButton();
+        jButtonMenuInventory = new javax.swing.JButton();
+        jButtonMenuAdmin = new javax.swing.JButton();
+        jPanelProfile = new javax.swing.JPanel();
+        jLabelProfileIcon = new javax.swing.JLabel();
+        jLabelProfileName = new javax.swing.JLabel();
+        jLabelProfileLevel = new javax.swing.JLabel();
+        jPanelNotification = new javax.swing.JPanel();
+        jLabelNotificationIcon = new javax.swing.JLabel();
+        jButtonNotificationClose = new javax.swing.JButton();
+        jLabelNotificationEntity = new javax.swing.JLabel();
+        jLabelNotificationMessage = new javax.swing.JLabel();
+        jLabelNotificationError = new javax.swing.JLabel();
+        jPanelView = new javax.swing.JPanel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setName("frameMain"); // NOI18N
+        setPreferredSize(new java.awt.Dimension(1024, 640));
+        setResizable(false);
+        setSize(new java.awt.Dimension(1024, 620));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanelNavBar.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelNavBar.setPreferredSize(new java.awt.Dimension(844, 50));
+        jPanelNavBar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButtonNavBarPos0.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        jButtonNavBarPos0.setPreferredSize(new java.awt.Dimension(65, 30));
+        jPanelNavBar.add(jButtonNavBarPos0, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jLabelNavBarPos1.setPreferredSize(new java.awt.Dimension(14, 30));
+        jPanelNavBar.add(jLabelNavBarPos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, -1, -1));
+
+        jButtonNavBarPos1.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        jButtonNavBarPos1.setPreferredSize(new java.awt.Dimension(65, 30));
+        jPanelNavBar.add(jButtonNavBarPos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, -1, -1));
+
+        jLabelNavBarPos2.setPreferredSize(new java.awt.Dimension(14, 30));
+        jPanelNavBar.add(jLabelNavBarPos2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, -1, -1));
+
+        jButtonNavBarPos2.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        jButtonNavBarPos2.setPreferredSize(new java.awt.Dimension(65, 30));
+        jPanelNavBar.add(jButtonNavBarPos2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, -1, -1));
+
+        jLabelNavBarPos3.setPreferredSize(new java.awt.Dimension(14, 30));
+        jPanelNavBar.add(jLabelNavBarPos3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, -1, -1));
+
+        jButtonNavBarPos3.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        jButtonNavBarPos3.setPreferredSize(new java.awt.Dimension(65, 30));
+        jPanelNavBar.add(jButtonNavBarPos3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, -1, -1));
+
+        jButtonNavBarClose.setPreferredSize(new java.awt.Dimension(30, 30));
+        jPanelNavBar.add(jButtonNavBarClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 10, -1, -1));
+
+        getContentPane().add(jPanelNavBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, -1, -1));
+
+        jPanelMenu.setBackground(new java.awt.Color(160, 173, 69));
+        jPanelMenu.setPreferredSize(new java.awt.Dimension(180, 620));
+        jPanelMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanelMenuOptions.setBackground(new java.awt.Color(153, 153, 0));
+        jPanelMenuOptions.setPreferredSize(new java.awt.Dimension(180, 196));
+        jPanelMenuOptions.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButtonMenuPrincipal.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
+        jButtonMenuPrincipal.setText("Menu");
+        jButtonMenuPrincipal.setPreferredSize(new java.awt.Dimension(180, 45));
+        jPanelMenuOptions.add(jButtonMenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jButtonMenuService.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
+        jButtonMenuService.setText("Servicio");
+        jButtonMenuService.setPreferredSize(new java.awt.Dimension(180, 45));
+        jPanelMenuOptions.add(jButtonMenuService, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, -1));
+
+        jButtonMenuInventory.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
+        jButtonMenuInventory.setText("Inventario");
+        jButtonMenuInventory.setPreferredSize(new java.awt.Dimension(180, 45));
+        jPanelMenuOptions.add(jButtonMenuInventory, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, -1, -1));
+
+        jButtonMenuAdmin.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
+        jButtonMenuAdmin.setText("Administrador");
+        jButtonMenuAdmin.setToolTipText("");
+        jButtonMenuAdmin.setPreferredSize(new java.awt.Dimension(180, 45));
+        jPanelMenuOptions.add(jButtonMenuAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, -1, -1));
+
+        jPanelMenu.add(jPanelMenuOptions, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, -1, -1));
+
+        jPanelProfile.setBackground(new java.awt.Color(102, 102, 0));
+        jPanelProfile.setPreferredSize(new java.awt.Dimension(180, 80));
+        jPanelProfile.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelProfileIcon.setPreferredSize(new java.awt.Dimension(40, 25));
+        jPanelProfile.add(jLabelProfileIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
+
+        jLabelProfileName.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabelProfileName.setText("Nombre y apellido");
+        jLabelProfileName.setPreferredSize(new java.awt.Dimension(110, 16));
+        jPanelProfile.add(jLabelProfileName, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, -1, -1));
+
+        jLabelProfileLevel.setFont(new java.awt.Font("SansSerif", 0, 10)); // NOI18N
+        jLabelProfileLevel.setText("Administrador");
+        jLabelProfileLevel.setPreferredSize(new java.awt.Dimension(80, 10));
+        jPanelProfile.add(jLabelProfileLevel, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, -1, -1));
+
+        jPanelMenu.add(jPanelProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jPanelNotification.setBackground(new java.awt.Color(102, 102, 0));
+        jPanelNotification.setPreferredSize(new java.awt.Dimension(180, 130));
+        jPanelNotification.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelNotificationIcon.setPreferredSize(new java.awt.Dimension(30, 30));
+        jPanelNotification.add(jLabelNotificationIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jButtonNotificationClose.setPreferredSize(new java.awt.Dimension(20, 20));
+        jPanelNotification.add(jButtonNotificationClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, -1, -1));
+
+        jLabelNotificationEntity.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        jLabelNotificationEntity.setText("Servicio");
+        jLabelNotificationEntity.setPreferredSize(new java.awt.Dimension(100, 16));
+        jPanelNotification.add(jLabelNotificationEntity, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, -1, -1));
+
+        jLabelNotificationMessage.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jLabelNotificationMessage.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabelNotificationMessage.setText("El servicio no se ha guardado correctamente");
+        jLabelNotificationMessage.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabelNotificationMessage.setPreferredSize(new java.awt.Dimension(160, 40));
+        jPanelNotification.add(jLabelNotificationMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
+
+        jLabelNotificationError.setFont(new java.awt.Font("SansSerif", 0, 10)); // NOI18N
+        jLabelNotificationError.setText("Error : sin conexion algo asi.");
+        jPanelNotification.add(jLabelNotificationError, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
+
+        jPanelMenu.add(jPanelNotification, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 490, -1, -1));
+
+        getContentPane().add(jPanelMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jPanelView.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelView.setPreferredSize(new java.awt.Dimension(844, 570));
+        jPanelView.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jPanelView, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -79,5 +219,31 @@ public class JfMain extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonMenuAdmin;
+    private javax.swing.JButton jButtonMenuInventory;
+    private javax.swing.JButton jButtonMenuPrincipal;
+    private javax.swing.JButton jButtonMenuService;
+    private javax.swing.JButton jButtonNavBarClose;
+    private javax.swing.JButton jButtonNavBarPos0;
+    private javax.swing.JButton jButtonNavBarPos1;
+    private javax.swing.JButton jButtonNavBarPos2;
+    private javax.swing.JButton jButtonNavBarPos3;
+    private javax.swing.JButton jButtonNotificationClose;
+    private javax.swing.JLabel jLabelNavBarPos1;
+    private javax.swing.JLabel jLabelNavBarPos2;
+    private javax.swing.JLabel jLabelNavBarPos3;
+    private javax.swing.JLabel jLabelNotificationEntity;
+    private javax.swing.JLabel jLabelNotificationError;
+    private javax.swing.JLabel jLabelNotificationIcon;
+    private javax.swing.JLabel jLabelNotificationMessage;
+    private javax.swing.JLabel jLabelProfileIcon;
+    private javax.swing.JLabel jLabelProfileLevel;
+    private javax.swing.JLabel jLabelProfileName;
+    private javax.swing.JPanel jPanelMenu;
+    private javax.swing.JPanel jPanelMenuOptions;
+    private javax.swing.JPanel jPanelNavBar;
+    public static javax.swing.JPanel jPanelNotification;
+    private javax.swing.JPanel jPanelProfile;
+    private javax.swing.JPanel jPanelView;
     // End of variables declaration//GEN-END:variables
 }
