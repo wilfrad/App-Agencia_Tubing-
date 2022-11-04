@@ -71,7 +71,9 @@ JfMain
 						jButtonGroup
 							size-button: 180, 40
 							margin: 4
-							color: 8c9931 \\ c8d577
+							entering: #dce98b
+							active: #c8d577
+							disable: #8c9931
 							font-size: 20
 		jPanelNotification
 			size: 180, 130

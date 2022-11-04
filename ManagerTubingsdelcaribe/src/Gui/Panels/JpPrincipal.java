@@ -5,6 +5,8 @@
  */
 package Gui.Panels;
 
+import Gui.Style;
+
 /**
  *
  * @author usuario
@@ -40,18 +42,26 @@ public class JpPrincipal extends javax.swing.JPanel {
         jLabelPrincipalIconAdmin = new javax.swing.JLabel();
         jLabelPrincipalAdmin = new javax.swing.JLabel();
 
+        setOpaque(false);
         setPreferredSize(new java.awt.Dimension(844, 570));
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanelPrincipalService.setBackground(new java.awt.Color(55, 200, 171));
         jPanelPrincipalService.setPreferredSize(new java.awt.Dimension(400, 300));
+        jPanelPrincipalService.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanelPrincipalServiceMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanelPrincipalServiceMouseExited(evt);
+            }
+        });
 
         jLabelPrincipalIconService.setBackground(new java.awt.Color(102, 102, 102));
         jLabelPrincipalIconService.setForeground(new java.awt.Color(153, 153, 153));
-        jLabelPrincipalIconService.setPreferredSize(new java.awt.Dimension(150, 150));
+        jLabelPrincipalIconService.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/icon_add150x150.png"))); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("SansSerif", 1, 30)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Servicios");
         jLabel1.setPreferredSize(new java.awt.Dimension(300, 40));
@@ -67,28 +77,26 @@ public class JpPrincipal extends javax.swing.JPanel {
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanelPrincipalServiceLayout.createSequentialGroup()
                         .addGap(124, 124, 124)
-                        .addComponent(jLabelPrincipalIconService, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabelPrincipalIconService)))
                 .addGap(50, 50, 50))
         );
         jPanelPrincipalServiceLayout.setVerticalGroup(
             jPanelPrincipalServiceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelPrincipalServiceLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addComponent(jLabelPrincipalIconService, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelPrincipalIconService)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        add(jPanelPrincipalService, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, -1, -1));
-
         jPanelPrincipalInventory.setBackground(new java.awt.Color(153, 85, 255));
         jPanelPrincipalInventory.setPreferredSize(new java.awt.Dimension(250, 300));
 
-        jLabelPrincipalIconInventory.setPreferredSize(new java.awt.Dimension(150, 150));
+        jLabelPrincipalIconInventory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/icon_inventory150x150.png"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("SansSerif", 1, 30)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Inventario");
         jLabel2.setPreferredSize(new java.awt.Dimension(200, 40));
@@ -101,7 +109,7 @@ public class JpPrincipal extends javax.swing.JPanel {
                 .addContainerGap(28, Short.MAX_VALUE)
                 .addGroup(jPanelPrincipalInventoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelPrincipalInventoryLayout.createSequentialGroup()
-                        .addComponent(jLabelPrincipalIconInventory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabelPrincipalIconInventory)
                         .addGap(46, 46, 46))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelPrincipalInventoryLayout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -111,22 +119,20 @@ public class JpPrincipal extends javax.swing.JPanel {
             jPanelPrincipalInventoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelPrincipalInventoryLayout.createSequentialGroup()
                 .addGap(47, 47, 47)
-                .addComponent(jLabelPrincipalIconInventory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelPrincipalIconInventory)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(51, Short.MAX_VALUE))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
-
-        add(jPanelPrincipalInventory, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 40, -1, -1));
 
         jPanelPrincipalLogs.setBackground(new java.awt.Color(255, 127, 42));
         jPanelPrincipalLogs.setPreferredSize(new java.awt.Dimension(400, 150));
 
-        jLabel3.setPreferredSize(new java.awt.Dimension(120, 120));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/icon_logs120x120.png"))); // NOI18N
 
         jLabelPrincipalLogs.setBackground(new java.awt.Color(51, 51, 51));
         jLabelPrincipalLogs.setFont(new java.awt.Font("SansSerif", 1, 30)); // NOI18N
-        jLabelPrincipalLogs.setForeground(new java.awt.Color(51, 51, 51));
+        jLabelPrincipalLogs.setForeground(new java.awt.Color(255, 255, 255));
         jLabelPrincipalLogs.setText("Informes");
 
         javax.swing.GroupLayout jPanelPrincipalLogsLayout = new javax.swing.GroupLayout(jPanelPrincipalLogs);
@@ -135,7 +141,7 @@ public class JpPrincipal extends javax.swing.JPanel {
             jPanelPrincipalLogsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelPrincipalLogsLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel3)
                 .addGap(31, 31, 31)
                 .addComponent(jLabelPrincipalLogs)
                 .addContainerGap(108, Short.MAX_VALUE))
@@ -146,29 +152,62 @@ public class JpPrincipal extends javax.swing.JPanel {
                 .addGroup(jPanelPrincipalLogsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelPrincipalLogsLayout.createSequentialGroup()
                         .addGap(14, 14, 14)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel3))
                     .addGroup(jPanelPrincipalLogsLayout.createSequentialGroup()
                         .addGap(52, 52, 52)
                         .addComponent(jLabelPrincipalLogs)))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        add(jPanelPrincipalLogs, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, -1, -1));
-
         jPanelPrincipalAdmin.setBackground(new java.awt.Color(255, 42, 42));
         jPanelPrincipalAdmin.setPreferredSize(new java.awt.Dimension(250, 150));
         jPanelPrincipalAdmin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabelPrincipalIconAdmin.setPreferredSize(new java.awt.Dimension(100, 100));
+        jLabelPrincipalIconAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/icon_admin100x100.png"))); // NOI18N
         jPanelPrincipalAdmin.add(jLabelPrincipalIconAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(72, 6, -1, -1));
 
         jLabelPrincipalAdmin.setFont(new java.awt.Font("SansSerif", 1, 30)); // NOI18N
-        jLabelPrincipalAdmin.setForeground(new java.awt.Color(51, 51, 51));
+        jLabelPrincipalAdmin.setForeground(new java.awt.Color(255, 255, 255));
         jLabelPrincipalAdmin.setText("Administrador");
         jPanelPrincipalAdmin.add(jLabelPrincipalAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
 
-        add(jPanelPrincipalAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 400, -1, -1));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanelPrincipalService, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(60, 60, 60)
+                        .addComponent(jPanelPrincipalInventory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanelPrincipalLogs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(60, 60, 60)
+                        .addComponent(jPanelPrincipalAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelPrincipalService, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelPrincipalInventory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(60, 60, 60)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelPrincipalLogs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelPrincipalAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jPanelPrincipalServiceMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanelPrincipalServiceMouseEntered
+        Style.BtnPrincipal.entered(jPanelPrincipalService);
+    }//GEN-LAST:event_jPanelPrincipalServiceMouseEntered
+
+    private void jPanelPrincipalServiceMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanelPrincipalServiceMouseExited
+        Style.BtnPrincipal.exited(jPanelPrincipalService);
+    }//GEN-LAST:event_jPanelPrincipalServiceMouseExited
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

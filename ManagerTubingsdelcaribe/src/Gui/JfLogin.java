@@ -31,7 +31,6 @@ public class JfLogin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setName("frameLogin"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(400, 600));
         setResizable(false);
         setSize(new java.awt.Dimension(400, 600));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

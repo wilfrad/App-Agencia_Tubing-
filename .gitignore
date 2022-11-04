@@ -1,5 +1,14 @@
 local_agata_pc
 local_agata_pc.pub
-/ManagerTubingsdelcaribe/nbproject/private/
+/ManagerTubingsdelcaribe/nbproject/
+/ManagerTubingsdelcaribe/build/
+/diagrams/sketch-database-relationship.drawio
+/diagrams/class-packages-diagram.drawio
+/design/references/
+/design/design-styles-data.txt
+/design/scheme.pptx
+/design/sketch-design-service-inventory
+/database_scripts/tubingsdelcaribe_regs_script.sql
+/database_scripts/testing_db.sql
 *.bkp
 *.dtmp

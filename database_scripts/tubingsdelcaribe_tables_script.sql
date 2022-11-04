@@ -88,3 +88,7 @@ create table if not exists factura ( id_fac int unsigned auto_increment primary 
 	constraint fk_empleado_2 foreign key (fk_empleado_fac)
 		references empleado(id_emp)
 );
+
+create table if not exists unusable (id int primary key);
+
+insert into unusable values(64);

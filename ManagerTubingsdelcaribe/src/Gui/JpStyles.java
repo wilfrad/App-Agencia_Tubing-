@@ -10,7 +10,6 @@ package Gui;
  * @author usuario
  */
 public class JpStyles extends javax.swing.JPanel {
-
     /**
      * Creates new form JpStyles
      */
@@ -28,13 +27,94 @@ public class JpStyles extends javax.swing.JPanel {
     private void initComponents() {
 
         jTextFieldStyle = new javax.swing.JTextField();
+        jLabelStyleTextField = new javax.swing.JLabel();
+        jButtonStyleNext = new javax.swing.JButton();
+        jButtonStyleMenu = new javax.swing.JButton();
+        jTextFieldStyleWithList = new javax.swing.JTextField();
+        jComboBoxTexField = new javax.swing.JComboBox<>();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jButtonIconClose = new javax.swing.JButton();
+        jPanelButton = new javax.swing.JPanel();
+        jLabelButton = new javax.swing.JLabel();
+        jPanelButtonIcon = new javax.swing.JPanel();
+        jLabelButtonIcon = new javax.swing.JLabel();
 
         jTextFieldStyle.setBackground(new java.awt.Color(255, 255, 255));
         jTextFieldStyle.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jTextFieldStyle.setForeground(new java.awt.Color(153, 153, 153));
         jTextFieldStyle.setText("placeholder");
+        jTextFieldStyle.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2));
         jTextFieldStyle.setDisabledTextColor(new java.awt.Color(204, 204, 204));
+        jTextFieldStyle.setOpaque(false);
         jTextFieldStyle.setPreferredSize(new java.awt.Dimension(200, 40));
+        jTextFieldStyle.setVerifyInputWhenFocusTarget(false);
+
+        jLabelStyleTextField.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabelStyleTextField.setText("LabelTextField");
+
+        jButtonStyleNext.setBackground(new java.awt.Color(160, 173, 69));
+        jButtonStyleNext.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
+        jButtonStyleNext.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonStyleNext.setText("Action");
+        jButtonStyleNext.setBorder(null);
+        jButtonStyleNext.setPreferredSize(new java.awt.Dimension(150, 40));
+
+        jButtonStyleMenu.setBackground(new java.awt.Color(140, 153, 49));
+        jButtonStyleMenu.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
+        jButtonStyleMenu.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonStyleMenu.setText("Action");
+        jButtonStyleMenu.setBorder(null);
+        jButtonStyleMenu.setPreferredSize(new java.awt.Dimension(180, 45));
+
+        jTextFieldStyleWithList.setBackground(new java.awt.Color(255, 255, 255));
+        jTextFieldStyleWithList.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jTextFieldStyleWithList.setForeground(new java.awt.Color(153, 153, 153));
+        jTextFieldStyleWithList.setText("placeholder");
+        jTextFieldStyleWithList.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2));
+        jTextFieldStyleWithList.setDisabledTextColor(new java.awt.Color(204, 204, 204));
+        jTextFieldStyleWithList.setOpaque(false);
+        jTextFieldStyleWithList.setPreferredSize(new java.awt.Dimension(150, 40));
+        jTextFieldStyleWithList.setVerifyInputWhenFocusTarget(false);
+
+        jComboBoxTexField.setBackground(new java.awt.Color(51, 51, 51));
+        jComboBoxTexField.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jComboBoxTexField.setBorder(null);
+        jComboBoxTexField.setPreferredSize(new java.awt.Dimension(70, 30));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jButtonIconClose.setBackground(new java.awt.Color(255, 255, 255));
+        jButtonIconClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/icon-close.png"))); // NOI18N
+        jButtonIconClose.setBorder(null);
+        jButtonIconClose.setBorderPainted(false);
+        jButtonIconClose.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        jPanelButton.setBackground(new java.awt.Color(140, 153, 49));
+        jPanelButton.setPreferredSize(new java.awt.Dimension(180, 45));
+        jPanelButton.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelButton.setBackground(new java.awt.Color(140, 153, 49));
+        jLabelButton.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
+        jLabelButton.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelButton.setText("Action");
+        jLabelButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabelButton.setFocusable(false);
+        jLabelButton.setPreferredSize(new java.awt.Dimension(180, 45));
+        jPanelButton.add(jLabelButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jPanelButtonIcon.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelButtonIcon.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelButtonIcon.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelButtonIcon.setFont(new java.awt.Font("SansSerif", 1, 30)); // NOI18N
+        jLabelButtonIcon.setForeground(new java.awt.Color(102, 102, 102));
+        jLabelButtonIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelButtonIcon.setText("X");
+        jLabelButtonIcon.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabelButtonIcon.setFocusable(false);
+        jLabelButtonIcon.setPreferredSize(new java.awt.Dimension(30, 30));
+        jPanelButtonIcon.add(jLabelButtonIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -42,20 +122,68 @@ public class JpStyles extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextFieldStyle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(194, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelStyleTextField)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jComboBoxTexField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTextFieldStyleWithList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(56, 56, 56)
+                        .addComponent(jPanelButtonIcon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonIconClose, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextFieldStyle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonStyleNext, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonStyleMenu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(35, 35, 35)
+                        .addComponent(jPanelButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(208, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextFieldStyle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(254, Short.MAX_VALUE))
+                .addComponent(jLabelStyleTextField)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jTextFieldStyle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonStyleNext, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonStyleMenu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextFieldStyleWithList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBoxTexField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                        .addComponent(jButtonIconClose, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanelButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(64, 64, 64)
+                        .addComponent(jPanelButtonIcon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonIconClose;
+    public static javax.swing.JButton jButtonStyleMenu;
+    private javax.swing.JButton jButtonStyleNext;
+    private javax.swing.JComboBox<String> jComboBox1;
+    public static javax.swing.JComboBox<String> jComboBoxTexField;
+    private javax.swing.JLabel jLabelButton;
+    private javax.swing.JLabel jLabelButtonIcon;
+    public static javax.swing.JLabel jLabelStyleTextField;
+    private javax.swing.JPanel jPanelButton;
+    private javax.swing.JPanel jPanelButtonIcon;
     public static javax.swing.JTextField jTextFieldStyle;
+    public static javax.swing.JTextField jTextFieldStyleWithList;
     // End of variables declaration//GEN-END:variables
 }

@@ -27,19 +27,187 @@ public class JpSectionClient extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jLabelClientName = new javax.swing.JLabel();
+        jTextFieldClientName = new javax.swing.JTextField();
+        jLabelClientLastName = new javax.swing.JLabel();
+        jTextFieldClientLastName = new javax.swing.JTextField();
+        jLabelClientDocument = new javax.swing.JLabel();
+        jTextFieldClientDocument = new javax.swing.JTextField();
+        jLabelClientContact = new javax.swing.JLabel();
+        jTextFieldClientContact = new javax.swing.JTextField();
+        jLabelClientSidekick = new javax.swing.JLabel();
+        jTextFieldClientSidekick = new javax.swing.JTextField();
+        jPanelSidekick = new javax.swing.JPanel();
+        jLabelClientSidekickDocument1 = new javax.swing.JLabel();
+        jTextFieldClientSidekickDocument = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jPanelButtonSidekickAdd = new javax.swing.JPanel();
+        jLabelButtonSidekickAdd = new javax.swing.JLabel();
+        jPanelButton = new javax.swing.JPanel();
+        jLabelButton = new javax.swing.JLabel();
+
+        setOpaque(false);
+        setPreferredSize(new java.awt.Dimension(844, 570));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelClientName.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabelClientName.setForeground(new java.awt.Color(51, 51, 51));
+        jLabelClientName.setText("Nombre : ");
+        add(jLabelClientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, -1));
+
+        jTextFieldClientName.setBackground(new java.awt.Color(255, 255, 255));
+        jTextFieldClientName.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jTextFieldClientName.setForeground(new java.awt.Color(153, 153, 153));
+        jTextFieldClientName.setText("nombres del cliente");
+        jTextFieldClientName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2));
+        jTextFieldClientName.setDisabledTextColor(new java.awt.Color(204, 204, 204));
+        jTextFieldClientName.setOpaque(false);
+        jTextFieldClientName.setPreferredSize(new java.awt.Dimension(250, 40));
+        jTextFieldClientName.setVerifyInputWhenFocusTarget(false);
+        add(jTextFieldClientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
+
+        jLabelClientLastName.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabelClientLastName.setForeground(new java.awt.Color(51, 51, 51));
+        jLabelClientLastName.setText("Apellido :");
+        add(jLabelClientLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 30, -1, -1));
+
+        jTextFieldClientLastName.setBackground(new java.awt.Color(255, 255, 255));
+        jTextFieldClientLastName.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jTextFieldClientLastName.setForeground(new java.awt.Color(153, 153, 153));
+        jTextFieldClientLastName.setText("apellidos del cliente");
+        jTextFieldClientLastName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2));
+        jTextFieldClientLastName.setDisabledTextColor(new java.awt.Color(204, 204, 204));
+        jTextFieldClientLastName.setOpaque(false);
+        jTextFieldClientLastName.setPreferredSize(new java.awt.Dimension(250, 40));
+        jTextFieldClientLastName.setVerifyInputWhenFocusTarget(false);
+        add(jTextFieldClientLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 60, -1, -1));
+
+        jLabelClientDocument.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabelClientDocument.setForeground(new java.awt.Color(51, 51, 51));
+        jLabelClientDocument.setText("Documento :");
+        add(jLabelClientDocument, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, -1));
+
+        jTextFieldClientDocument.setBackground(new java.awt.Color(255, 255, 255));
+        jTextFieldClientDocument.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jTextFieldClientDocument.setForeground(new java.awt.Color(153, 153, 153));
+        jTextFieldClientDocument.setText("numero de id");
+        jTextFieldClientDocument.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2));
+        jTextFieldClientDocument.setDisabledTextColor(new java.awt.Color(204, 204, 204));
+        jTextFieldClientDocument.setOpaque(false);
+        jTextFieldClientDocument.setPreferredSize(new java.awt.Dimension(200, 40));
+        jTextFieldClientDocument.setVerifyInputWhenFocusTarget(false);
+        add(jTextFieldClientDocument, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, -1, -1));
+
+        jLabelClientContact.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabelClientContact.setForeground(new java.awt.Color(51, 51, 51));
+        jLabelClientContact.setText("Contacto :");
+        add(jLabelClientContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 170, -1, -1));
+
+        jTextFieldClientContact.setBackground(new java.awt.Color(255, 255, 255));
+        jTextFieldClientContact.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jTextFieldClientContact.setForeground(new java.awt.Color(153, 153, 153));
+        jTextFieldClientContact.setText("numero de telefono");
+        jTextFieldClientContact.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2));
+        jTextFieldClientContact.setDisabledTextColor(new java.awt.Color(204, 204, 204));
+        jTextFieldClientContact.setOpaque(false);
+        jTextFieldClientContact.setPreferredSize(new java.awt.Dimension(200, 40));
+        jTextFieldClientContact.setVerifyInputWhenFocusTarget(false);
+        add(jTextFieldClientContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, -1, -1));
+
+        jLabelClientSidekick.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabelClientSidekick.setForeground(new java.awt.Color(51, 51, 51));
+        jLabelClientSidekick.setText("Compañia :");
+        jLabelClientSidekick.setToolTipText("");
+        add(jLabelClientSidekick, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, -1));
+
+        jTextFieldClientSidekick.setBackground(new java.awt.Color(255, 255, 255));
+        jTextFieldClientSidekick.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jTextFieldClientSidekick.setForeground(new java.awt.Color(153, 153, 153));
+        jTextFieldClientSidekick.setText("cantidad");
+        jTextFieldClientSidekick.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2));
+        jTextFieldClientSidekick.setDisabledTextColor(new java.awt.Color(204, 204, 204));
+        jTextFieldClientSidekick.setOpaque(false);
+        jTextFieldClientSidekick.setPreferredSize(new java.awt.Dimension(100, 40));
+        jTextFieldClientSidekick.setVerifyInputWhenFocusTarget(false);
+        add(jTextFieldClientSidekick, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, -1, -1));
+
+        jPanelSidekick.setBackground(new java.awt.Color(204, 204, 204));
+        jPanelSidekick.setPreferredSize(new java.awt.Dimension(300, 150));
+        jPanelSidekick.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelClientSidekickDocument1.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabelClientSidekickDocument1.setForeground(new java.awt.Color(51, 51, 51));
+        jLabelClientSidekickDocument1.setText("Documento :");
+        jPanelSidekick.add(jLabelClientSidekickDocument1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jTextFieldClientSidekickDocument.setBackground(new java.awt.Color(255, 255, 255));
+        jTextFieldClientSidekickDocument.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jTextFieldClientSidekickDocument.setForeground(new java.awt.Color(153, 153, 153));
+        jTextFieldClientSidekickDocument.setText("numero de id");
+        jTextFieldClientSidekickDocument.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2));
+        jTextFieldClientSidekickDocument.setDisabledTextColor(new java.awt.Color(204, 204, 204));
+        jTextFieldClientSidekickDocument.setOpaque(false);
+        jTextFieldClientSidekickDocument.setPreferredSize(new java.awt.Dimension(200, 40));
+        jTextFieldClientSidekickDocument.setVerifyInputWhenFocusTarget(false);
+        jPanelSidekick.add(jTextFieldClientSidekickDocument, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel1.setText("0 de 0");
+        jPanelSidekick.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, -1, -1));
+
+        jPanelButtonSidekickAdd.setBackground(new java.awt.Color(140, 153, 49));
+        jPanelButtonSidekickAdd.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelButtonSidekickAdd.setBackground(new java.awt.Color(140, 153, 49));
+        jLabelButtonSidekickAdd.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
+        jLabelButtonSidekickAdd.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelButtonSidekickAdd.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelButtonSidekickAdd.setText("Agregar");
+        jLabelButtonSidekickAdd.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabelButtonSidekickAdd.setFocusable(false);
+        jLabelButtonSidekickAdd.setPreferredSize(new java.awt.Dimension(120, 30));
+        jPanelButtonSidekickAdd.add(jLabelButtonSidekickAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jPanelSidekick.add(jPanelButtonSidekickAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
+
+        add(jPanelSidekick, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, -1, -1));
+
+        jPanelButton.setBackground(new java.awt.Color(140, 153, 49));
+        jPanelButton.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelButton.setBackground(new java.awt.Color(140, 153, 49));
+        jLabelButton.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
+        jLabelButton.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelButton.setText("Siguiente");
+        jLabelButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabelButton.setFocusable(false);
+        jLabelButton.setPreferredSize(new java.awt.Dimension(180, 45));
+        jPanelButton.add(jLabelButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        add(jPanelButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 470, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabelButton;
+    private javax.swing.JLabel jLabelButtonSidekickAdd;
+    public static javax.swing.JLabel jLabelClientContact;
+    public static javax.swing.JLabel jLabelClientDocument;
+    public static javax.swing.JLabel jLabelClientLastName;
+    public static javax.swing.JLabel jLabelClientName;
+    public static javax.swing.JLabel jLabelClientSidekick;
+    public static javax.swing.JLabel jLabelClientSidekickDocument1;
+    private javax.swing.JPanel jPanelButton;
+    private javax.swing.JPanel jPanelButtonSidekickAdd;
+    private javax.swing.JPanel jPanelSidekick;
+    public static javax.swing.JTextField jTextFieldClientContact;
+    public static javax.swing.JTextField jTextFieldClientDocument;
+    public static javax.swing.JTextField jTextFieldClientLastName;
+    public static javax.swing.JTextField jTextFieldClientName;
+    public static javax.swing.JTextField jTextFieldClientSidekick;
+    public static javax.swing.JTextField jTextFieldClientSidekickDocument;
     // End of variables declaration//GEN-END:variables
 }

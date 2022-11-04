@@ -1,12 +1,10 @@
 package Connection;
 
-import java.util.Arrays;
-
 public class Consult {
-    private String action, tableName, funcName;
+    private String tableName, funcName;
     private String[] identify, columns, parameters;
     
-    public Consult (String accion, String nombreFuncion, String[] parametros) {
+    public Consult (String nombreFuncion, String[] parametros) {
         this.funcName = nombreFuncion;
         this.parameters = parametros;
     }
@@ -14,16 +12,8 @@ public class Consult {
     public Consult (String identify, String tableName, String[] columns, String[] parameters) {
         this.identify = new String[] {columns[0],identify};
         this.tableName = tableName;
-        this.columns = Arrays.copyOfRange(columns, 1, columns.length);;
+        this.columns = columns;
         this.parameters = parameters;
-    }
-    
-    public void setAction (String action) {
-        this.action = action;
-    }
-    
-    public String getAction () {
-        return this.action;
     }
     
     public String[] getIdentify () {
@@ -39,14 +29,14 @@ public class Consult {
     }
     
     public String getColumns () {
-        return data(columns);
+        return dataToString(columns);
     }
     
-    public String getData () {
-        return data(parameters);
+    public String getParameters () {
+        return dataToString(parameters);
     }
     
-    public String data (String[] input) {
+    private String dataToString (String[] input) {
         if (input.length <= 0) {
             StringBuilder builder = new StringBuilder();
             for (String item : input)
