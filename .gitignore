@@ -1,5 +1,7 @@
 local_agata_pc
 local_agata_pc.pub
+/lib/
+/design/gui-template.svg
 /ManagerTubingsdelcaribe/nbproject/
 /ManagerTubingsdelcaribe/build/
 /diagrams/sketch-database-relationship.drawio
@@ -12,3 +14,4 @@ local_agata_pc.pub
 /database_scripts/testing_db.sql
 *.bkp
 *.dtmp
+/ManagerTubingsdelcaribe/dist/
